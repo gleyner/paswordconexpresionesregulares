@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador Contraseña</title>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Icono -->
+    <link rel="shortcut icon" href="assets/images/pngwing.com.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="text-center bg-dark text-white">Validador De Contraseñas 3000</h1>
+
+    <div class="container">
+        <div class="rules">
+            <p>
+            <h4>Las palabras a validar deben tener la siguiente estructura:</h3>
+                Una letra mayuscula, 3 digitos, 3 letras minusculas, 3 caracteres especiales ("",.''·:{}~!¡@#$%^&*()_+*=?<>/) <br>
+                por ejemplo: <b>A111abc¡*?</b><br><br><br>
+                </p>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Ingrese la palabra a validar"
+                aria-label="Recipient's username" aria-describedby="button-addon2" id="inputControl">
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Expresion regular" aria-label="Recipient's username"
+                aria-describedby="button-addon2" id="captura">
+        </div>
+        <P> <b>Ejemplo de Expresion Regular:</b> ^([A-Z][0-9]{3}[a-z]{3}["",.''·:{}~!¡@#$%^&*()_+*=?<>/]{3})$</P>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-outline-dark" type="button" id="button-addon2"
+                onclick="ValidarContraseña()">Validar</button>
+
+        </div>
+
+        <div class="alert alert-info" role="alert" id="AlertaSucces">
+            Validado con exito!
+        </div>
+
+        <div class="alert alert-danger" role="alert" id="AlertaError">
+            Error, la contraseña no es segura.
+        </div>
+        
+    </div>
+    <br><br><br><br><br>
+    <div class="d-grid gap-2 col-6 mx-5">
+        <h3>Gabriel candelario -- Gleyner Ospino</h3>
+    </div>
+
+</body>
+
+<script src="assets/js/app.js"></script>
+
+</html>

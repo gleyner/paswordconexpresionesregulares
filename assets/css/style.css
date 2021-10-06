@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin-top: 40px;
+}
+
+.rules p{
+    padding: 0;
+}
+
